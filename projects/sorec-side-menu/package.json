@@ -1,6 +1,21 @@
 {
   "name": "sorec-side-menu",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SergioO21/sorec-workspace"
+  },
+  "keywords": [
+    "Sorec",
+    "side-menu",
+    "do-not-use"
+  ],
+  "license": "MIT",
+  "author": "Sergio Orejarena",
+  "bugs": {
+    "url": "https://github.com/SergioO21/sorec-workspace/issues"
+  },
+  "homepage": "https://github.com/SergioO21",
   "peerDependencies": {
     "@angular/common": "^19.1.0",
     "@angular/core": "^19.1.0"
