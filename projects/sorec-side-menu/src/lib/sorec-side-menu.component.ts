@@ -1,5 +1,6 @@
 import { Component, input, output } from "@angular/core";
 import { RouterLink, RouterLinkActive } from "@angular/router";
+import { NgClass } from "@angular/common";
 
 export enum TitleColor {
   blue = "text-blue-500",
@@ -10,12 +11,15 @@ export enum TitleColor {
 
 @Component({
   selector: "lib-sorec-side-menu",
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, NgClass],
   templateUrl: "./sorec-side-menu.component.html",
   styles: ``,
 })
 export class SorecSideMenuComponent {
   isAuth = input(false);
+
+  title = input<string>("SOREC");
+  subtitle = input<string>("Corp");
 
   titleColor = input<TitleColor>(TitleColor.purple);
 

@@ -6,8 +6,23 @@
       <h6
         class="text-2xl font-bold block antialiased tracking-normal font-sans leading-relaxed text-white"
       >
-        <span [classList]="[titleColor()]">SOREC</span>
-        <span class="font-thin"> Corp</span>
+        <span
+          [ngClass]="[
+            titleColor(),
+            'block',
+            'w-58',
+            'text-ellipsis',
+            'whitespace-nowrap',
+            'overflow-hidden',
+          ]"
+        >
+          {{ title() }}
+        </span>
+        <span
+          class="font-thin block w-58 text-ellipsis whitespace-nowrap overflow-hidden"
+        >
+          {{ subtitle() }}</span
+        >
       </h6>
     </a>
     <button
